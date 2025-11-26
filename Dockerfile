@@ -5,5 +5,4 @@ FROM quay.io/jupyter/minimal-notebook:afe30f0c9ad8
 COPY conda-linux-64.lock /tmp/conda-linux-64.lock
 
 # 3. Install the conda packages using the lock file
-RUN conda install --yes --name base --file /tmp/conda-linux-64.lock && \
-    conda clean -afy
+RUN conda install --yes --name base --file /tmp/conda-linux-64.lock
