@@ -11,3 +11,6 @@ RUN conda create --yes --name dsci522-env --file /tmp/conda-linux-64.lock && \
 # 4. Make the new environment the default
 ENV CONDA_DEFAULT_ENV=dsci522-env
 ENV PATH=/opt/conda/envs/dsci522-env/bin:$PATH
+
+# end
+
